@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.addform {
+  background-color: beige;
+  border-radius: 5px;
+  border: 1px solid #939384;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.addform:hover {
+  background-color: white;
+  letter-spacing: 3px;
+}
+
+.wholeaddform {
+  margin-top: 10px;
+  background-color: #c4c4b0;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 3px #7a7a6e;
+  border: 1px solid #939384;
+}
+
+body {
+  background-image: url('restaurant_icons.png');
+}
+.title {
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: -2px;
+  font-family: "comic sans", sans-serif;
+}
+.titlebody {
+  background-color: rgba(200, 200, 170, .4);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.btnaction {
+  float: right;
+}
+.subtitle {
+  position: relative;
+  left: 15px;
+  font-size: 20px;
+  color: grey;
+  font-family: "comic sans", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-shadow: 1px 0px 1px white;
+}
+.inputborder {
+  border: 1px solid #939384;
+}
+
+.todocontainer {
+  min-height: 100px;
+  min-width: 300px;
+  margin-top: 10px;
+}
+.todobg {
+  background-color: beige;
+  height: 80px;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 8px;
+  border: 1px solid #939384;
+  margin: 7px;
+}
+.todobg:hover {
+  background-color: white;
+}
+.whole {
+  margin-top: 50px;
+}

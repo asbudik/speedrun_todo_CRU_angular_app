@@ -1,0 +1,32 @@
+<div class="whole container-fluid">
+  <div class="container">
+    <div class="titlebody">
+      <h1 class="title">Dusk Lecture Todo App</h1>
+      <h4 class="subtitle">(angular on rails)</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-4 wholeaddform">
+        <form ng-submit="addTodo()">
+          <div class="form-group">
+            <input class="form-control inputborder" ng-model="todo.name" placeholder="Enter a title">
+          </div>
+          <div class="form-group">
+            <input class="form-control inputborder" ng-model="todo.description" placeholder="Enter a description">
+          </div>
+          <div class="form-group">
+            <button class="form-control addform">Save Task</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-offset-2 col-md-4 todocontainer wholeaddform">
+        <div ng-repeat="todo in todos">
+          <div class="todobg">
+            <strong>{{todo.name}}</strong><br>
+            {{todo.description}}
+            <button class="btnaction btn btn-default btn-sm" ng-click="deleteTodo(todo)">Delete Task</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
